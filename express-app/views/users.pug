@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  link(href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet")
+  main
+    h2 Welcome to #{users}
+    form(method='POST')
+          label #{enter}
+          input(type='text' name='username')
+          button(type='submit') Enter
+        
